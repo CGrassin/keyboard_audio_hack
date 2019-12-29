@@ -38,8 +38,8 @@ def get_output_plt(predictions,class_names):
 
 def main():
     parser = argparse.ArgumentParser(description='Process some recordings of key presses to recover characters.')
-    parser.add_argument('--train-path', type=str, default='./Sound/train', help='Training directory containing files KEY_number.waw')
-    parser.add_argument('--test-path', type=str, default='./Sound/test/PASSWORD...cut.wav', help='File to predict.')
+    parser.add_argument('--train-path', type=str, help='Training directory containing files KEY_number.waw')
+    parser.add_argument('--test-path', type=str, help='File to predict.')
     parser.add_argument('--method', type=str, default='ml_mlp', help='Method to use: ml_mlp/ml_cnn/cross_correlation/fft')
     parser.add_argument('--model', type=str, default='', help='Path to save/load H5 model')
     parser.add_argument('--trigger', type=float, default=1000, help='Trigger threshold')

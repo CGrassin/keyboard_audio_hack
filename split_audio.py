@@ -14,7 +14,7 @@ import os
 def normalize(x: np.ndarray):
     return x/np.max(x);
 
-def split_file(file, time_before=0.025, time_after=0.2, trigger=1000, normalize_result =False):
+def split_file(file, time_before=0.025, time_after=0.2, trigger=1000, normalize_result=False):
     outputs = []
 
     # Open file
